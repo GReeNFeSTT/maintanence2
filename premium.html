@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="premium_title">Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Пакет Premium — приоритетное обслуживание критичных объектов, максимальная скорость реакции и индивидуальный менеджер.">
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="stile.css">
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+
+<!-- Language Switcher -->
+<div class="lang-switcher">
+  <button onclick="setLanguage('es')" class="lang-btn fi fi-uy" aria-label="Cambiar a Español"></button>
+  <button onclick="setLanguage('en')" class="lang-btn fi fi-gb" aria-label="Switch to English"></button>
+  <button onclick="setLanguage('ru')" class="lang-btn fi fi-ru" aria-label="Переключить на Русский"></button>
+</div>
+
+<div class="container" style="max-width: 80rem; padding-top: 2rem; padding-bottom: 2.5rem;">
+  <header class="flex items-center justify-between mb-10">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors">
+      <span class="text-lg">←</span>
+      <span data-i18n="back_home">На главную</span>
+    </a>
+    <span class="label" data-i18n="package_label_premium">Premium package</span>
+  </header>
+
+  <main class="space-y-8">
+    <section>
+      <span class="label" data-i18n="premium_label">Максимум</span>
+      <h1 class="heading-xl" data-i18n="premium_title">Premium</h1>
+      <p class="text-base max-w-2xl" data-i18n="premium_desc">
+        Приоритетное обслуживание квартир и домов, индивидуальный менеджер и максимальная скорость реакции.
+      </p>
+    </section>
+
+    <section class="grid grid-hero">
+      <article class="card space-y-4">
+        <h2 class="text-base font-semibold" data-i18n="whats_included">Что входит</h2>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li data-i18n="premium_point_1">Выделенная команда инженеров</li>
+          <li data-i18n="premium_point_2">Минимальное время реакции 24/7</li>
+          <li data-i18n="premium_point_3">Индивидуальные регламенты под квартиру/дом</li>
+          <li data-i18n="premium_point_4">Персональный менеджер и регулярные стратегические сессии по объекту</li>
+        </ul>
+      </article>
+
+      <aside class="card bg-slate-50 space-y-4">
+        <h2 class="text-base font-semibold" data-i18n="suitable_for">Для каких объектов</h2>
+        <ul class="space-y-1.5 text-sm text-slate-700">
+          <li data-i18n="premium_suitable_1">— Квартиры и апартаменты</li>
+          <li data-i18n="premium_suitable_2">— Дома и виллы</li>
+          <li data-i18n="premium_suitable_3">— Несколько объектов для инвесторов</li>
+          <li data-i18n="premium_suitable_4">— Коммерческие помещения (офисы, магазины)</li>
+        </ul>
+        <div class="pt-4 border-t mt-4">
+          <span class="label" data-i18n="price_request">Стоимость по запросу</span>
+          <p class="text-xs text-slate-600 mb-3" data-i18n="premium_price_note">
+            Подбирается индивидуально с учётом SLA, критичности систем и количества квартир/домов.
+          </p>
+          <a href="index.html#contact" class="btn btn-primary" data-i18n="cta_contact">Оставить заявку</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+</div>
+
+<script src="lang.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="title">Technical maintenance of premises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Управление и техническое обслуживание недвижимости в Уругвае: квартиры, апартаменты, дома для частных владельцев, инвесторов и агентств.">
+
+  <!-- Open Graph for social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Управление и обслуживание недвижимости в Уругвае">
+  <meta property="og:description" content="Берём на себя управление и техническое обслуживание квартир, апартаментов и домов для владельцев, инвесторов и агентств.">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Управление и обслуживание недвижимости в Уругвае">
+  <meta name="twitter:description" content="Комплексные решения по управлению и техническому обслуживанию квартир, апартаментов и домов, прозрачный сервис и отчётность.">
+
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="stile.css">
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+
+<!-- Language Switcher -->
+<div class="lang-switcher">
+  <button onclick="setLanguage('es')" class="lang-btn fi fi-uy" aria-label="Cambiar a Español"></button>
+  <button onclick="setLanguage('en')" class="lang-btn fi fi-gb" aria-label="Switch to English"></button>
+  <button onclick="setLanguage('ru')" class="lang-btn fi fi-ru" aria-label="Переключить на Русский"></button>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-logo">FM</div>
+      <div>
+        <p class="brand-tagline" data-i18n="brand_tagline">Facility Maintenance</p>
+        <p class="brand-name" data-i18n="brand_name">Premium Technical Services</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#services" class="nav-link" data-i18n="nav_services">Услуги</a>
+      <a href="#benefits" class="nav-link" data-i18n="nav_benefits">Преимущества</a>
+      <a href="#packages" class="nav-link" data-i18n="nav_packages">Пакеты</a>
+      <a href="#contact" class="nav-link" data-i18n="nav_contact">Контакты</a>
+      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav_cta">Оставить заявку</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container grid grid-hero">
+      <div>
+        <span class="label" data-i18n="hero_label">24/7 Facility Care</span>
+        <h1 class="heading-xl" data-i18n="headline">
+          Управление и техническое
+          обслуживание недвижимости
+        </h1>
+        <p class="text-base mb-6 max-w-xl" data-i18n="subheadline">
+          Берём на себя заботу о вашей недвижимости в Уругвае: квартиры, апартаменты, дома — для частных владельцев, инвесторов и агентств.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 mb-6">
+          <a href="#contact" class="btn btn-primary" data-i18n="cta_primary">Запросить предложение</a>
+          <a href="#packages" class="btn btn-secondary" data-i18n="cta_secondary">Посмотреть пакеты услуг</a>
+        </div>
+        <div class="hero-points">
+          <span data-i18n="hero_point_1">Контроль состояния объекта без вашего присутствия</span>
+          <span data-i18n="hero_point_2">Работаем по договору и понятным регламентам</span>
+          <span data-i18n="hero_point_3">Опыт более 10 лет</span>
+        </div>
+      </div>
+      <div class="card">
+        <p class="text-xs font-medium text-slate-800 mb-4" data-i18n="services_title">
+          Управление и обслуживание жилой недвижимости
+        </p>
+        <ul class="space-y-2 text-xs">
+          <li data-i18n="service_1_title">Обслуживание инженерных сетей</li>
+          <li data-i18n="service_2_title">Эксплуатация и клининг</li>
+          <li data-i18n="service_3_title">Регулярные осмотры и отчётность</li>
+        </ul>
+        <div class="mt-4 pt-4 border-t text-xs text-slate-500">
+          <span data-i18n="benefits_label">Почему выбирают нас</span>:
+          <span data-i18n="benefit_1_label">Опыт</span>,
+          <span data-i18n="benefit_2_label">Сроки</span>,
+          <span data-i18n="benefit_3_label">Прозрачность</span>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="mb-10">
+        <span class="label" data-i18n="services_label">Основные направления</span>
+        <h2 class="heading-lg" data-i18n="services_title">Комплексное обслуживание инженерных систем</h2>
+        <p class="text-base max-w-2xl" data-i18n="services_subtitle">
+          Мы выстраиваем системный подход к эксплуатации жилой недвижимости, чтобы вы могли сосредоточиться на инвестициях, а не на технических вопросах.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3 class="text-sm font-semibold mb-2" data-i18n="service_1_title">Обслуживание инженерных сетей</h3>
+          <p class="text-xs" data-i18n="service_1_desc">
+            Электрика, вентиляция, кондиционирование, водоснабжение, канализация — плановые осмотры, диагностика и оперативный ремонт для квартир и домов.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="text-sm font-semibold mb-2" data-i18n="service_2_title">Организация сервисных работ</h3>
+          <p class="text-xs" data-i18n="service_2_desc">
+            Координация подрядчиков, контроль мелких ремонтных работ и сроков их выполнения для жилой недвижимости.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="text-sm font-semibold mb-2" data-i18n="service_3_title">Регулярные осмотры и отчётность</h3>
+          <p class="text-xs" data-i18n="service_3_desc">
+            Плановые визиты на объект, фото‑ и видеоотчёты, контроль подрядчиков и состояния инженерных систем в квартирах и домах.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <div class="mb-10">
+        <span class="label" data-i18n="benefits_label">Почему выбирают нас</span>
+        <h2 class="heading-lg" data-i18n="benefits_title">Понятные условия и прогнозируемый результат</h2>
+        <p class="text-base max-w-2xl" data-i18n="benefits_subtitle">
+          Мы строим долгосрочные отношения с заказчиками и отвечаем за качество работ своим именем.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="benefit-item">
+          <span class="label" data-i18n="benefit_1_label">Опыт</span>
+          <p class="benefit-value" data-i18n="benefit_1_value">10+ лет</p>
+          <p class="text-xs text-slate-600" data-i18n="benefit_1_desc">
+            лет работы в сфере эксплуатации жилой недвижимости.
+          </p>
+        </article>
+        <article class="benefit-item">
+          <span class="label" data-i18n="benefit_2_label">Сроки</span>
+          <p class="benefit-value" data-i18n="benefit_2_value">&lt; 60 мин</p>
+          <p class="text-xs text-slate-600" data-i18n="benefit_2_desc">
+            среднее время выезда аварийной бригады в часы работы.
+          </p>
+        </article>
+        <article class="benefit-item">
+          <span class="label" data-i18n="benefit_3_label">Прозрачность</span>
+          <p class="benefit-value" data-i18n="benefit_3_value">Отчётность</p>
+          <p class="text-xs text-slate-600" data-i18n="benefit_3_desc">
+            детальные отчёты по заявкам, фотофиксация состояния квартир и домов, план-график работ.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="packages">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="heading-lg" data-i18n="packages_title">Пакеты обслуживания</h2>
+          <p class="text-base" data-i18n="packages_subtitle">
+          Выберите готовый пакет под вашу квартиру, апартаменты или дом, либо запросите индивидуальное решение.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- BASIC -->
+        <a href="basic.html" class="card card-hover">
+          <div class="card-header">
+            <span class="label" data-i18n="basic_label">Старт</span>
+            <span class="card-tag" data-i18n="basic_tag">для небольших помещений</span>
+          </div>
+          <h3 class="card-title" data-i18n="basic_title">Basic</h3>
+          <p class="text-xs mb-4" data-i18n="basic_desc">
+            Базовое обслуживание и техническая поддержка для квартир, апартаментов и небольших домов.
+          </p>
+          <ul class="card-list">
+            <li data-i18n="basic_point_1">Плановые обходы 1–2 раза в месяц</li>
+            <li data-i18n="basic_point_2">Реакция на заявки в рабочие часы</li>
+            <li data-i18n="basic_point_3">Базовая отчётность по выполненным работам</li>
+          </ul>
+          <span class="label" data-i18n="price_request">Стоимость по запросу</span>
+        </a>
+
+        <!-- STANDARD -->
+        <a href="standard.html" class="card card-hover card-featured">
+          <div class="card-header">
+            <span class="label" data-i18n="standard_label">Баланс</span>
+            <span class="card-tag" data-i18n="standard_tag">для спокойствия и безопасности</span>
+          </div>
+          <h3 class="card-title" data-i18n="standard_title">Standard</h3>
+          <p class="text-xs mb-4" data-i18n="standard_desc">
+            Полное сопровождение инженерных систем в квартирах и домах, оперативная реакция и приоритизация заявок.
+          </p>
+          <ul class="card-list">
+            <li data-i18n="standard_point_1">Регулярные обходы по индивидуальному графику</li>
+            <li data-i18n="standard_point_2">Сокращённое время реакции на аварийные заявки</li>
+            <li data-i18n="standard_point_3">Расширенная отчётность и рекомендации по модернизации</li>
+          </ul>
+          <span class="label" data-i18n="price_request">Стоимость по запросу</span>
+        </a>
+
+        <!-- PREMIUM -->
+        <a href="premium.html" class="card card-hover">
+          <div class="card-header">
+            <span class="label" data-i18n="premium_label">Максимум</span>
+            <span class="card-tag" data-i18n="premium_tag">для критичных объектов</span>
+          </div>
+          <h3 class="card-title" data-i18n="premium_title">Premium</h3>
+          <p class="text-xs mb-4" data-i18n="premium_desc">
+            Приоритетное обслуживание квартир и домов, индивидуальный менеджер и максимальная скорость реакции.
+          </p>
+          <ul class="card-list">
+            <li data-i18n="premium_point_1">Выделенная команда инженеров</li>
+            <li data-i18n="premium_point_2">Минимальное время реакции 24/7</li>
+            <li data-i18n="premium_point_3">Индивидуальные регламенты под объект</li>
+          </ul>
+          <span class="label text-slate-500" data-i18n="price_request">Стоимость по запросу</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container grid grid-hero">
+      <div>
+        <span class="label" data-i18n="contact_label">Свяжитесь с нами</span>
+        <h2 class="heading-lg" data-i18n="contact_title">Обсудим обслуживание ваших помещений</h2>
+        <p class="text-base mb-6 max-w-xl" data-i18n="contact_subtitle">
+          Оставьте краткую информацию об объекте, и мы предложим варианты сотрудничества в удобном для вас формате.
+        </p>
+
+        <ul class="contact-points">
+          <li data-i18n="contact_point_1">Работаем по всей территории Уругвая</li>
+          <li data-i18n="contact_point_2">Поддерживаем русскоязычных, испаноязычных и англоязычных клиентов</li>
+          <li data-i18n="contact_point_3">Возможны разовые выезды и долгосрочные контракты на обслуживание квартир и домов</li>
+        </ul>
+
+        <div class="contact-actions">
+          <a href="mailto:tiktokproject923@gmail.com" class="btn btn-primary" data-i18n="contact_email">Написать на email</a>
+          <a href="https://wa.me/59896113958" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="contact_whatsapp">Написать в WhatsApp</a>
+          <a href="https://t.me/59896113958" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="contact_telegram">Написать в Telegram</a>
+        </div>
+      </div>
+
+      <div class="card bg-slate-50">
+        <p class="text-sm font-semibold mb-3 text-slate-900" data-i18n="contact_form_title">Краткая заявка</p>
+        <form class="space-y-3" action="https://formspree.io/f/mpqdbyde" method="POST">
+          <div class="form-group">
+            <label class="form-label" data-i18n="contact_form_name_label">Имя и компания</label>
+            <input type="text" name="name" class="form-input" data-i18n-placeholder="contact_form_name_placeholder" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="contact_form_email_label">Email или телефон</label>
+            <input type="text" name="contact" class="form-input" data-i18n-placeholder="contact_form_email_placeholder" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="contact_form_object_label">Тип объекта</label>
+            <select name="object_type" class="form-select">
+              <option value="Квартира / апартаменты" data-i18n="contact_form_object_option_1">Квартира / апартаменты</option>
+              <option value="Дом / вилла" data-i18n="contact_form_object_option_2">Дом / вилла</option>
+              <option value="Несколько объектов" data-i18n="contact_form_object_option_3">Несколько объектов</option>
+              <option value="Другое" data-i18n="contact_form_object_option_4">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="contact_form_message_label">Кратко о задаче</label>
+            <textarea name="message" class="form-textarea" data-i18n-placeholder="contact_form_message_placeholder" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact_form_button">
+            Отправить запрос
+          </button>
+          <p class="text-xs text-slate-500 mt-2" data-i18n="contact_form_hint">
+            Нажимая кнопку, вы соглашаетесь на обработку переданных контактных данных для связи с вами по вопросу обслуживания вашей недвижимости.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© 2026 — Uruguay. <span data-i18n="footer_rights">Все права защищены.</span></p>
+    <p data-i18n="footer_note">
+      Техническое обслуживание и эксплуатация жилой недвижимости. Доступна поддержка на русском, испанском и английском языках.
+    </p>
+  </div>
+</footer>
+
+<script src="lang.js" defer></script>
+</body>
+</html>

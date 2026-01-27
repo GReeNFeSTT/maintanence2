@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="basic_title">Basic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Пакет Basic — базовое обслуживание и контроль состояния небольших объектов недвижимости в Уругвае.">
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="stile.css">
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+
+<!-- Language Switcher -->
+<div class="lang-switcher">
+  <button onclick="setLanguage('es')" class="lang-btn fi fi-uy" aria-label="Cambiar a Español"></button>
+  <button onclick="setLanguage('en')" class="lang-btn fi fi-gb" aria-label="Switch to English"></button>
+  <button onclick="setLanguage('ru')" class="lang-btn fi fi-ru" aria-label="Переключить на Русский"></button>
+</div>
+
+<div class="container" style="max-width: 80rem; padding-top: 2rem; padding-bottom: 2.5rem;">
+  <header class="flex items-center justify-between mb-10">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors">
+      <span class="text-lg">←</span>
+      <span data-i18n="back_home">На главную</span>
+    </a>
+    <span class="label" data-i18n="package_label_basic">Basic package</span>
+  </header>
+
+  <main class="space-y-8">
+    <section>
+      <span class="label" data-i18n="basic_label">Старт</span>
+      <h1 class="heading-xl" data-i18n="basic_title">Basic</h1>
+      <p class="text-base max-w-2xl" data-i18n="basic_desc">
+        Базовое обслуживание и техническая поддержка для квартир, апартаментов и небольших домов.
+      </p>
+    </section>
+
+    <section class="grid grid-hero">
+      <article class="card space-y-4">
+        <h2 class="text-base font-semibold" data-i18n="whats_included">Что входит</h2>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li data-i18n="basic_point_1">Плановые обходы 1–2 раза в месяц</li>
+          <li data-i18n="basic_point_2">Реакция на заявки в рабочие часы</li>
+          <li data-i18n="basic_point_3">Базовая отчётность по выполненным работам</li>
+          <li data-i18n="basic_point_4">Базовый контроль состояния инженерных систем в квартире/доме (электрика, вентиляция, вода)</li>
+        </ul>
+      </article>
+
+      <aside class="card bg-slate-50 space-y-4">
+        <h2 class="text-base font-semibold" data-i18n="suitable_for">Для каких объектов</h2>
+        <ul class="space-y-1.5 text-sm text-slate-700">
+          <li data-i18n="basic_suitable_1">— Квартиры и апартаменты</li>
+          <li data-i18n="basic_suitable_2">— Небольшие дома и виллы</li>
+          <li data-i18n="basic_suitable_3">— Арендные объекты для инвесторов</li>
+        </ul>
+        <div class="pt-4 border-t mt-4">
+          <span class="label" data-i18n="price_request">Стоимость по запросу</span>
+          <p class="text-xs text-slate-600 mb-3" data-i18n="basic_price_note">
+            Итоговая цена зависит от площади квартиры/дома, набора инженерных систем и количества объектов.
+          </p>
+          <a href="index.html#contact" class="btn btn-primary" data-i18n="cta_contact">Оставить заявку</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+</div>
+
+<script src="lang.js" defer></script>
+</body>
+</html>
