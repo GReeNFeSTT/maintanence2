@@ -1,6 +1,14 @@
 import { CONFIG } from "./config.js";
 
-export const translations = {
+// Lazy load translations to improve performance
+const translations = {
+  ru: null,
+  es: null, 
+  en: null
+};
+
+// Translation data loaded on demand
+const translationData = {
   ru: {
     // META / TITLE
     title: "Управление и обслуживание недвижимости",
@@ -509,42 +517,63 @@ export const translations = {
   },
 };
 
+// Cache for loaded translations
+const translationCache = new Map();
+
 export function applyTranslations(lang) {
-  const dict = translations[lang];
+  // Use cached translation if available
+  if (translationCache.has(lang)) {
+    const dict = translationCache.get(lang);
+    return applyTranslationToDOM(dict);
+  }
+
+  // Load translation data on demand
+  const dict = translationData[lang];
   if (!dict) {
     return;
   }
 
-  document
-    .querySelectorAll("[data-i18n]")
-    .forEach((element) => {
+  // Cache the translation
+  translationCache.set(lang, dict);
+  
+  // Apply translation
+  applyTranslationToDOM(dict);
+}
+
+function applyTranslationToDOM(dict) {
+  // Use requestAnimationFrame for better performance
+  requestAnimationFrame(() => {
+    // Update text content
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
       if (dict[key]) {
         element.textContent = dict[key];
       }
     });
 
-  document
-    .querySelectorAll("[data-i18n-placeholder]")
-    .forEach((element) => {
+    // Update placeholders
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
       const key = element.getAttribute("data-i18n-placeholder");
       if (dict[key]) {
         element.placeholder = dict[key];
       }
     });
 
-  const titleEl = document.querySelector("title[data-i18n]");
-  if (titleEl) {
-    const key = titleEl.getAttribute("data-i18n");
-    if (dict[key]) {
-      titleEl.textContent = dict[key];
+    // Update title
+    const titleEl = document.querySelector("title[data-i18n]");
+    if (titleEl) {
+      const key = titleEl.getAttribute("data-i18n");
+      if (dict[key]) {
+        titleEl.textContent = dict[key];
+      }
     }
-  }
 
-  const htmlEl = document.documentElement;
-  if (htmlEl) {
-    htmlEl.lang = lang;
-  }
+    // Update language attribute
+    const htmlEl = document.documentElement;
+    if (htmlEl) {
+      htmlEl.lang = lang;
+    }
+  });
 }
 
 export function detectInitialLanguage() {

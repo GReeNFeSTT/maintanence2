@@ -2,18 +2,92 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n="premium_title">Premium</title>
+  <title data-i18n="premium_title">Premium Package - Property Maintenance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Пакет Premium — приоритетное обслуживание критичных объектов, максимальная скорость реакции и индивидуальный менеджер.">
+  <meta name="keywords" content="premium package, property maintenance, critical objects, priority service, Uruguay">
+  <meta name="author" content="Property Maintenance Uruguay">
+  <meta name="robots" content="index, follow">
   
   <!-- Performance optimizations -->
-  <link rel="preconnect" href="https://cdn.tailwindcss.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   
-  <!-- Styles -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
-  <link rel="stylesheet" href="stile.css">
+  <!-- Critical CSS inline for above-the-fold content -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+    :root {
+      --color-slate-50: #f8fafc;
+      --color-slate-200: #e2e8f0;
+      --color-slate-300: #cbd5e1;
+      --color-slate-500: #64748b;
+      --color-slate-600: #475569;
+      --color-slate-700: #334155;
+      --color-slate-800: #1e293b;
+      --color-slate-900: #0f172a;
+      --color-white: #ffffff;
+      --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --letter-spacing-wide: 0.25em;
+      --radius-sm: 0.25rem;
+      --radius-md: 0.5rem;
+      --radius-xl: 0.75rem;
+      --transition-fast: 150ms ease-in-out;
+    }
+    
+    * { box-sizing: border-box; }
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { margin: 0; padding: 0; font-family: var(--font-base); line-height: 1.6; background-color: var(--color-slate-50); color: var(--color-slate-900); }
+    
+    .container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+    .lang-switcher { position: fixed; top: 1rem; right: 1rem; display: flex; gap: 0.5rem; z-index: 50; }
+    .lang-btn { width: 1.75rem; height: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--color-slate-200); cursor: pointer; transition: all var(--transition-fast); }
+    .lang-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.625rem 1.5rem; border-radius: 9999px; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; text-decoration: none; cursor: pointer; transition: all 200ms ease-in-out; border: none; white-space: nowrap; }
+    .btn-primary { background-color: var(--color-slate-900); color: var(--color-white); }
+    .btn-primary:hover { background-color: var(--color-slate-800); transform: translateY(-1px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .label { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: var(--letter-spacing-wide); color: var(--color-slate-500); margin-bottom: 0.5rem; display: block; }
+    .heading-xl { font-size: 1.875rem; font-weight: 600; line-height: 1.2; margin-bottom: 1rem; }
+    .text-base { font-size: 0.875rem; color: var(--color-slate-600); }
+    .text-sm { font-size: 0.75rem; color: var(--color-slate-700); }
+    .card { border: 1px solid var(--color-slate-200); border-radius: var(--radius-xl); padding: 1.25rem; background-color: var(--color-white); transition: all 200ms ease-in-out; }
+    .grid-hero { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
+    
+    @media (min-width: 768px) {
+      .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .heading-xl { font-size: 2.25rem; }
+      .grid-hero { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+    }
+    
+    /* Accessibility improvements */
+    a:focus, button:focus, input:focus, select:focus, textarea:focus {
+      outline: 2px solid var(--color-slate-900);
+      outline-offset: 2px;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+  
+  <!-- Load non-critical CSS after page load -->
+  <link rel="stylesheet" href="stile.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" media="print" onload="this.media='all'"/>
+  
+  <!-- Fallback for CSS without JS -->
+  <noscript>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+  </noscript>
+  
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Property Maintenance">
 </head>
 
 <body class="min-h-screen bg-slate-50 text-slate-900">
