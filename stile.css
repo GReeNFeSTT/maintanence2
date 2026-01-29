@@ -22,6 +22,9 @@ textarea::-ms-input-placeholder {
   color: #94a3b8 !important;
 }
 
+/* Remove unused Tailwind imports */
+/* These were only needed for standard.html and premium.html which use Tailwind CDN */
+
 /* ====================
    1. BASE STYLES
    ==================== */
@@ -721,3 +724,6 @@ textarea:focus {
     display: none;
   }
 }
+
+/* Remove unused Tailwind imports */
+/* These were only needed for standard.html and premium.html which use Tailwind CDN */
