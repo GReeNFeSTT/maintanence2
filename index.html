@@ -25,9 +25,23 @@
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
   <!-- Styles -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"/>
-  <link rel="stylesheet" href="stile.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="src/assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="src/assets/icons/favicon-192.png">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="src/js/i18n.js" as="script">
+  <link rel="preload" href="src/js/ui.js" as="script">
+  <link rel="preload" href="src/js/form.js" as="script">
+  <link rel="preload" href="src/js/analytics.js" as="script">
 </head>
 
 <body class="min-h-screen bg-slate-50 text-slate-900">
@@ -265,7 +279,7 @@
 
       <div class="card bg-slate-50">
         <p class="text-sm font-semibold mb-3 text-slate-900" data-i18n="contact_form_title">Краткая заявка</p>
-        <form class="space-y-3" action="https://formspree.io/f/mpqdbyde" method="POST">
+        <form class="space-y-3" data-form="contact" novalidate>
           <div class="form-group">
             <label class="form-label" data-i18n="contact_form_name_label">Имя и компания</label>
             <input type="text" name="name" class="form-input" data-i18n-placeholder="contact_form_name_placeholder" required>
@@ -308,6 +322,17 @@
   </div>
 </footer>
 
-<script src="lang.js" defer></script>
+<script type="module" src="src/js/i18n.js"></script>
+<script type="module" src="src/js/ui.js"></script>
+<script type="module" src="src/js/form.js"></script>
+<script type="module" src="src/js/analytics.js"></script>
+<script>
+  // Initialize analytics after DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    import('./src/js/analytics.js').then(module => {
+      module.initAnalytics();
+    });
+  });
+</script>
 </body>
 </html>
