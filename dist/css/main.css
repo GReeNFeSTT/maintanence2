@@ -429,6 +429,13 @@ body {
   color: var(--color-white);
 }
 
+/* Fix card-tag background and border on hover */
+.card-hover:hover .card-tag {
+  background-color: var(--color-slate-800);
+  border-color: var(--color-slate-700);
+  color: var(--color-white);
+}
+
 .card-featured {
   border-color: var(--color-slate-900);
   position: relative;
