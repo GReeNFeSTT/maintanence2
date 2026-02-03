@@ -83,6 +83,7 @@ const translationData = {
       "Базовый контроль состояния инженерных систем в квартире/доме (электрика, вентиляция, вода)",
 
     basic_price: "от 90 USD",
+    price_request: "Стоимость по запросу",
 
     standard_label: "Баланс",
     standard_tag: "для спокойствия и безопасности",
@@ -100,6 +101,7 @@ const translationData = {
       "Планирование и контроль сезонных работ (кондиционирование, отопление и др.)",
 
     standard_price: "от 120 USD",
+    price_request: "Стоимость по запросу",
 
     premium_label: "Максимум",
     premium_tag: "для критичных объектов",
@@ -115,6 +117,7 @@ const translationData = {
     premium_point_6: "Консьерж-сервис и сопровождение при визитах",
 
     premium_price: "от 180 USD",
+    price_request: "Стоимость по запросу",
 
     // CONTACT
     contact_label: "Свяжитесь с нами",
@@ -255,6 +258,7 @@ const translationData = {
       "Control básico del estado de los sistemas técnicos en apartamento/casa (electricidad, ventilación, agua)",
 
     basic_price: "desde 90 USD",
+    price_request: "Precio a consultar",
 
     standard_label: "Equilibrio",
     standard_tag: "para tranquilidad y seguridad",
@@ -273,6 +277,7 @@ const translationData = {
       "Planificación y control de trabajos estacionales (aire acondicionado, calefacción, etc.)",
 
     standard_price: "desde 120 USD",
+    price_request: "Precio a consultar",
 
     premium_label: "Máximo",
     premium_tag: "para sitios críticos",
@@ -289,6 +294,7 @@ const translationData = {
     premium_point_6: "Servicio de conserjería y acompañamiento en visitas",
 
     premium_price: "desde 180 USD",
+    price_request: "Precio a consultar",
 
     contact_label: "Contacto",
     contact_title:
@@ -435,6 +441,7 @@ const translationData = {
       "Basic monitoring of engineering systems in apartment/home (electrical, HVAC, water)",
 
     basic_price: "from 90 USD",
+    price_request: "Price on request",
 
     standard_label: "Balanced",
     standard_tag: "for peace and security",
@@ -453,6 +460,7 @@ const translationData = {
       "Planning and control of seasonal works (air conditioning, heating, etc.)",
 
     standard_price: "from 120 USD",
+    price_request: "Price on request",
 
     premium_label: "Maximum",
     premium_tag: "for critical sites",
@@ -469,6 +477,7 @@ const translationData = {
     premium_point_6: "Concierge service and visit accompaniment",
 
     premium_price: "from 180 USD",
+    price_request: "Price on request",
 
     contact_label: "Contact us",
     contact_title:

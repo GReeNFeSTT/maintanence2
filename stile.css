@@ -173,6 +173,11 @@ body {
   white-space: nowrap;
 }
 
+/* Hide mobile home button on all pages except package pages */
+body:not(.package-page) .mobile-home-btn {
+  display: none !important;
+}
+
 .mobile-home-btn:hover {
   background-color: var(--color-white);
   color: var(--color-slate-900);
