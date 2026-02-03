@@ -135,6 +135,9 @@
   <button onclick="setLanguage('ru')" class="lang-btn fi fi-ru" aria-label="Переключить на Русский"></button>
 </div>
 
+<!-- Mobile Home Button -->
+<a href="index.html" class="mobile-home-btn" data-i18n="nav_home">Главная</a>
+
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
@@ -146,6 +149,7 @@
       </div>
     </div>
     <nav class="nav">
+      <a href="index.html" class="nav-link nav-home-link" data-i18n="nav_home">Главная</a>
       <a href="#services" class="nav-link" data-i18n="nav_services">Услуги</a>
       <a href="#benefits" class="nav-link" data-i18n="nav_benefits">Преимущества</a>
       <a href="#packages" class="nav-link" data-i18n="nav_packages">Пакеты</a>
@@ -293,7 +297,7 @@
             <li data-i18n="basic_point_2">Реакция на заявки в рабочие часы</li>
             <li data-i18n="basic_point_3">Базовая отчётность по выполненным работам</li>
           </ul>
-          <span class="label" data-i18n="price_request">Стоимость по запросу</span>
+          <span class="label price-label" data-i18n="basic_price">от 90 USD</span>
         </a>
 
         <!-- STANDARD -->
@@ -310,8 +314,9 @@
             <li data-i18n="standard_point_1">Регулярные обходы по индивидуальному графику</li>
             <li data-i18n="standard_point_2">Сокращённое время реакции на аварийные заявки</li>
             <li data-i18n="standard_point_3">Расширенная отчётность и рекомендации по модернизации</li>
+            <li data-i18n="standard_point_4">Планирование и контроль сезонных работ (кондиционирование, отопление и др.)</li>
           </ul>
-          <span class="label" data-i18n="price_request">Стоимость по запросу</span>
+          <span class="label price-label" data-i18n="standard_price">от 120 USD</span>
         </a>
 
         <!-- PREMIUM -->
@@ -328,8 +333,11 @@
             <li data-i18n="premium_point_1">Выделенная команда инженеров</li>
             <li data-i18n="premium_point_2">Минимальное время реакции 24/7</li>
             <li data-i18n="premium_point_3">Индивидуальные регламенты под объект</li>
+            <li data-i18n="premium_point_4">Персональный менеджер и регулярные стратегические сессии</li>
+            <li data-i18n="premium_point_5">Приоритетное обслуживание всех систем</li>
+            <li data-i18n="premium_point_6">Консьерж-сервис и сопровождение при визитах</li>
           </ul>
-          <span class="label text-slate-500" data-i18n="price_request">Стоимость по запросу</span>
+          <span class="label price-label" data-i18n="premium_price">от 180 USD</span>
         </a>
       </div>
     </div>
@@ -407,5 +415,26 @@
 <script type="module" src="src/js/ui.js" defer></script>
 <script type="module" src="src/js/form.js" defer></script>
 <script type="module" src="src/js/analytics.js" defer></script>
+
+<script>
+// Функция для переключения языка с сохранением в localStorage
+function setLanguage(lang) {
+  // Импортируем модуль i18n и применяем язык
+  import('./src/js/i18n.js').then(module => {
+    module.applyTranslations(lang);
+  });
+  
+  // Сохраняем выбранный язык в localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Обновляем атрибут lang у html элемента
+  document.documentElement.lang = lang;
+  
+  // Обновляем URL без перезагрузки страницы для лучшего UX
+  const url = new URL(window.location);
+  url.searchParams.set('lang', lang);
+  window.history.replaceState({}, '', url);
+}
+</script>
 </body>
 </html>

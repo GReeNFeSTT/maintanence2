@@ -51,6 +51,29 @@
     .card { border: 1px solid var(--color-slate-200); border-radius: var(--radius-xl); padding: 1.25rem; background-color: var(--color-white); transition: all 200ms ease-in-out; }
     .grid-hero { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
     
+    /* Package header styles to override any conflicting styles */
+    .package-header {
+      position: sticky !important;
+      top: 0 !important;
+      background-color: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(10px) !important;
+      z-index: 40 !important;
+      border-bottom: 1px solid var(--color-slate-200) !important;
+      padding: 3rem 1rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 2rem !important;
+    }
+    
+    .package-header .inline-flex {
+      margin-bottom: 1.5rem !important;
+    }
+    
+    .package-header .label {
+      margin-top: 1.5rem !important;
+    }
+    
     @media (min-width: 768px) {
       .container { padding-left: 1.5rem; padding-right: 1.5rem; }
       .heading-xl { font-size: 2.25rem; }
@@ -73,7 +96,7 @@
   </style>
   
   <!-- Load non-critical CSS after page load -->
-  <link rel="stylesheet" href="stile.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="stile.css?v=lj6k5o87v" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" media="print" onload="this.media='all'"/>
   
   <!-- Fallback for CSS without JS -->
@@ -99,8 +122,8 @@
   <button onclick="setLanguage('ru')" class="lang-btn fi fi-ru" aria-label="Переключить на Русский"></button>
 </div>
 
-<div class="container" style="max-width: 80rem; padding-top: 2rem; padding-bottom: 2.5rem;">
-  <header class="flex items-center justify-between mb-10">
+  <div class="container" style="max-width: 80rem; padding-top: 2rem; padding-bottom: 2.5rem;">
+  <header class="package-header flex items-center justify-between mb-10">
     <a href="index.html" class="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors">
       <span class="text-lg">←</span>
       <span data-i18n="back_home">На главную</span>
@@ -148,6 +171,7 @@
   </main>
 </div>
 
+<script type="module" src="src/js/i18n.js" defer></script>
 <script src="lang.js" defer></script>
 </body>
 </html>

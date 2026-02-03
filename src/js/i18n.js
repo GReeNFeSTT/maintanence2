@@ -16,6 +16,7 @@ const translationData = {
     // BRAND & NAV
     brand_tagline: "Facility Maintenance",
     brand_name: "Premium Technical Services",
+    nav_home: "Главная",
     nav_services: "Услуги",
     nav_benefits: "Преимущества",
     nav_packages: "Пакеты",
@@ -81,6 +82,8 @@ const translationData = {
     basic_point_4:
       "Базовый контроль состояния инженерных систем в квартире/доме (электрика, вентиляция, вода)",
 
+    basic_price: "от 90 USD",
+
     standard_label: "Баланс",
     standard_tag: "для спокойствия и безопасности",
     standard_title: "Standard",
@@ -93,6 +96,10 @@ const translationData = {
       "Расширенная отчётность и рекомендации по модернизации",
     standard_point_4:
       "Планирование и контроль сезонных работ (кондиционирование, отопление и др.) для квартир и домов",
+    standard_point_5:
+      "Планирование и контроль сезонных работ (кондиционирование, отопление и др.)",
+
+    standard_price: "от 120 USD",
 
     premium_label: "Максимум",
     premium_tag: "для критичных объектов",
@@ -104,8 +111,10 @@ const translationData = {
     premium_point_3: "Индивидуальные регламенты под объект",
     premium_point_4:
       "Персональный менеджер и регулярные стратегические сессии по объекту",
+    premium_point_5: "Приоритетное обслуживание всех систем",
+    premium_point_6: "Консьерж-сервис и сопровождение при визитах",
 
-    price_request: "Стоимость по запросу",
+    premium_price: "от 180 USD",
 
     // CONTACT
     contact_label: "Свяжитесь с нами",
@@ -178,6 +187,7 @@ const translationData = {
 
     brand_tagline: "Facility Maintenance",
     brand_name: "Premium Technical Services",
+    nav_home: "Inicio",
     nav_services: "Servicios",
     nav_benefits: "Ventajas",
     nav_packages: "Paquetes",
@@ -187,7 +197,7 @@ const translationData = {
     hero_label: "Property care & management",
     headline: "Gestión y mantenimiento\nde propiedades",
     subheadline:
-      "Nos encargamos del estado de sus inmuebles en Uruguay: apartamentos, casas y locales — para propietarios privados, inversores y agencias.",
+      "Nos encargamos del estado de sus inmuebles en Uruguay: apartamentos, casas y villas — para propietarios privados, inversores y agencias.",
     cta_primary: "Solicitar propuesta",
     cta_secondary: "Ver paquetes de servicio",
     hero_point_1:
@@ -201,13 +211,13 @@ const translationData = {
       "Organizamos el cuidado de sus propiedades para que pueda vivir en otro país, invertir o trabajar con tranquilidad.",
     service_1_title: "Mantenimiento de instalaciones",
     service_1_desc:
-      "Electricidad, ventilación, aire acondicionado, agua y saneamiento: inspecciones, diagnóstico y reparaciones.",
+      "Electricidad, ventilación, aire acondicionado, agua y saneamiento: inspecciones, diagnóstico y reparaciones para apartamentos y casas.",
     service_2_title: "Coordinación de servicios",
     service_2_desc:
-      "Coordinación de contratistas, pequeños trabajos de reparación y control de plazos.",
+      "Coordinación de contratistas, control de trabajos de reparación y plazos para inmuebles residenciales.",
     service_3_title: "Inspecciones regulares y reportes",
     service_3_desc:
-      "Visitas planificadas al sitio, reportes con fotos y vídeo, control de contratistas e instalaciones técnicas.",
+      "Visitas planificadas al sitio, reportes con fotos y vídeo, control de contratistas e instalaciones técnicas en apartamentos y casas.",
 
     benefits_label: "Por qué nos eligen",
     benefits_title:
@@ -217,7 +227,7 @@ const translationData = {
     benefit_1_label: "Experiencia",
     benefit_1_value: "10+ años",
     benefit_1_desc:
-      "años en operación y mantenimiento de inmuebles.",
+      "años en operación y mantenimiento de inmuebles residenciales.",
     benefit_2_label: "Tiempos",
     benefit_2_value: "< 60 min",
     benefit_2_desc:
@@ -225,30 +235,32 @@ const translationData = {
     benefit_3_label: "Transparencia",
     benefit_3_value: "Reportes",
     benefit_3_desc:
-      "reportes detallados, fotos y plan de trabajo.",
+      "reportes detallados, fotos y plan de trabajo para apartamentos y casas.",
 
     packages_title: "Paquetes de mantenimiento",
     packages_subtitle:
-      "Elija un paquete listo para su apartamento, casa o local, o pida una solución a medida.",
+      "Elija un paquete listo para su apartamento, casa o villa, o pida una solución a medida.",
 
     basic_label: "Inicio",
-    basic_tag: "para oficinas pequeñas",
+    basic_tag: "para inmuebles pequeños",
     basic_title: "Básico",
     basic_desc:
-      "Soporte básico y mantenimiento para espacios pequeños y coworkings.",
+      "Soporte básico y mantenimiento para apartamentos, casas y villas pequeñas.",
     basic_point_1:
       "Rondas planificadas 1–2 veces al mes",
     basic_point_2: "Respuesta en horario laboral",
     basic_point_3:
       "Reporte básico de trabajos realizados",
     basic_point_4:
-      "Control básico del estado de los sistemas técnicos (electricidad, ventilación, agua)",
+      "Control básico del estado de los sistemas técnicos en apartamento/casa (electricidad, ventilación, agua)",
+
+    basic_price: "desde 90 USD",
 
     standard_label: "Equilibrio",
-    standard_tag: "para centros de oficinas",
+    standard_tag: "para tranquilidad y seguridad",
     standard_title: "Estándar",
     standard_desc:
-      "Soporte completo de sistemas técnicos y priorización de solicitudes.",
+      "Soporte completo de sistemas técnicos en apartamentos y casas, respuesta rápida y priorización de solicitudes.",
     standard_point_1:
       "Rondas regulares según calendario individual",
     standard_point_2:
@@ -256,21 +268,27 @@ const translationData = {
     standard_point_3:
       "Reportes amplios con alto nivel de detalle",
     standard_point_4:
+      "Planificación y control de trabajos estacionales (aire acondicionado, calefacción, etc.) para apartamentos y casas",
+    standard_point_5:
       "Planificación y control de trabajos estacionales (aire acondicionado, calefacción, etc.)",
+
+    standard_price: "desde 120 USD",
 
     premium_label: "Máximo",
     premium_tag: "para sitios críticos",
     premium_title: "Premium",
     premium_desc:
-      "Soporte prioritario, gestor dedicado y máxima velocidad de reacción.",
+      "Soporte prioritario para apartamentos y casas, gestor dedicado y máxima velocidad de reacción.",
     premium_point_1: "Equipo de técnicos dedicado",
     premium_point_2: "Tiempo mínimo de respuesta 24/7",
     premium_point_3:
-      "Reglamentos individuales por sitio",
+      "Reglamentos individuales por apartamento/casa",
     premium_point_4:
-      "Gestor personal y sesiones estratégicas regulares sobre el sitio",
+      "Gestor personal y sesiones estratégicas regulares sobre el inmueble",
+    premium_point_5: "Servicio prioritario de todas las instalaciones",
+    premium_point_6: "Servicio de conserjería y acompañamiento en visitas",
 
-    price_request: "Precio a consultar",
+    premium_price: "desde 180 USD",
 
     contact_label: "Contacto",
     contact_title:
@@ -281,17 +299,17 @@ const translationData = {
     contact_point_2:
       "Atendemos en ruso, español e inglés",
     contact_point_3:
-      "Trabajos puntuales y contratos de largo plazo",
+      "Trabajos puntuales y contratos de largo plazo para apartamentos y casas",
     contact_email: "Escribir por email",
     contact_whatsapp: "Escribir por WhatsApp",
     contact_telegram: "Escribir en Telegram",
     contact_form_title: "Solicitud breve",
     contact_form_name_label: "Nombre y empresa",
     contact_form_email_label: "Email o teléfono",
-    contact_form_object_label: "Tipo de sitio",
-    contact_form_object_option_1: "Oficina / centro de negocios",
-    contact_form_object_option_2: "Tienda / local comercial",
-    contact_form_object_option_3: "Depósito",
+    contact_form_object_label: "Tipo de inmueble",
+    contact_form_object_option_1: "Apartamento / casa",
+    contact_form_object_option_2: "Casa / villa",
+    contact_form_object_option_3: "Varios inmuebles",
     contact_form_object_option_4: "Otro",
     contact_form_name_placeholder: "Su nombre / empresa",
     contact_form_email_placeholder: "+598 ... / email",
@@ -309,46 +327,47 @@ const translationData = {
 
     footer_rights: "Todos los derechos reservados.",
     footer_note:
-      "Gestión y mantenimiento técnico de inmuebles residenciales y comerciales. Soporte disponible en ruso, español e inglés.",
+      "Gestión y mantenimiento técnico de inmuebles residenciales. Soporte disponible en ruso, español e inglés.",
 
     back_home: "Volver al inicio",
     package_label_basic: "Paquete Básico",
     package_label_standard: "Paquete Estándar",
     package_label_premium: "Paquete Premium",
     whats_included: "Qué incluye",
-    suitable_for: "Para qué sitios",
+    suitable_for: "Para qué inmuebles",
     cta_contact: "Enviar solicitud",
     basic_suitable_1:
-      "— Oficinas pequeñas y gabinetes",
-    basic_suitable_2: "— Coworkings y estudios",
-    basic_suitable_3: "— Tiendas de barrio",
+      "— Apartamentos y casas",
+    basic_suitable_2: "— Casas y villas pequeñas",
+    basic_suitable_3: "— Inmuebles de alquiler para inversores",
     basic_price_note:
-      "El precio final depende del área, los sistemas técnicos y la cantidad de sitios.",
+      "El precio final depende del área del apartamento/casa, los sistemas técnicos y la cantidad de inmuebles.",
     standard_suitable_1:
-      "— Centros de oficinas de tamaño medio",
+      "— Apartamentos y casas",
     standard_suitable_2:
-      "— Varios sitios de una misma empresa",
+      "— Casas y villas",
     standard_suitable_3:
-      "— Locales comerciales y salones",
+      "— Varios inmuebles para inversores",
     standard_suitable_4:
-      "— —",
+      "— Locales comerciales (oficinas, tiendas)",
     standard_price_note:
-      "Se calcula según el área, cantidad de sistemas, calendario de trabajos y nivel de SLA requerido.",
+      "Se calcula según el área del apartamento/casa, cantidad de sistemas, calendario de trabajos y nivel de SLA requerido.",
     premium_suitable_1:
-      "— Sitios con infraestructura crítica",
+      "— Apartamentos y casas",
     premium_suitable_2:
-      "— Grandes centros de negocios y complejos comerciales",
+      "— Casas y villas",
     premium_suitable_3:
-      "— Sitios médicos y tecnológicos",
-    premium_suitable_4: "— —",
+      "— Varios inmuebles para inversores",
+    premium_suitable_4: "— Locales comerciales (oficinas, tiendas)",
     premium_price_note:
-      "Se selecciona individualmente según SLA, criticidad de sistemas y cantidad de sitios.",
+      "Se selecciona individualmente según SLA, criticidad de sistemas y cantidad de apartamentos/casas.",
   },
   en: {
     title: "Property management & maintenance",
 
     brand_tagline: "Facility Maintenance",
     brand_name: "Premium Technical Services",
+    nav_home: "Home",
     nav_services: "Services",
     nav_benefits: "Benefits",
     nav_packages: "Packages",
@@ -358,7 +377,7 @@ const translationData = {
     hero_label: "Property care & management",
     headline: "Property management\nand technical maintenance",
     subheadline:
-      "We look after your properties in Uruguay – apartments, homes and commercial units – for private owners, investors and agencies.",
+      "We look after your properties in Uruguay – apartments, homes and villas – for private owners, investors and agencies.",
     cta_primary: "Request proposal",
     cta_secondary: "View service packages",
     hero_point_1:
@@ -373,13 +392,13 @@ const translationData = {
       "We set up a structured approach to caring for your assets so you can live abroad, invest or run your business with peace of mind.",
     service_1_title: "Engineering systems maintenance",
     service_1_desc:
-      "Electrical, HVAC, water supply and sewerage – inspections, diagnostics and repairs.",
+      "Electrical, HVAC, water supply and sewerage – inspections, diagnostics and repairs for apartments and homes.",
     service_2_title: "Service coordination",
     service_2_desc:
-      "Coordinating contractors, minor repair work and keeping timelines on track.",
+      "Coordinating contractors, minor repair work and keeping timelines on track for residential properties.",
     service_3_title: "Regular inspections & reporting",
     service_3_desc:
-      "Scheduled visits, photo/video reports and coordination of contractors and building systems.",
+      "Scheduled visits, photo/video reports and coordination of contractors and building systems in apartments and homes.",
 
     benefits_label: "Why clients choose us",
     benefits_title: "Clear conditions and predictable results",
@@ -388,7 +407,7 @@ const translationData = {
     benefit_1_label: "Experience",
     benefit_1_value: "10+ years",
     benefit_1_desc:
-      "years in property operation and maintenance.",
+      "years in residential property operation and maintenance.",
     benefit_2_label: "Response",
     benefit_2_value: "< 60 min",
     benefit_2_desc:
@@ -396,30 +415,32 @@ const translationData = {
     benefit_3_label: "Transparency",
     benefit_3_value: "Reporting",
     benefit_3_desc:
-      "detailed ticket reports, photos and work schedules.",
+      "detailed ticket reports, photos and work schedules for apartments and homes.",
 
     packages_title: "Service packages",
     packages_subtitle:
-      "Choose a ready package for your apartment, house or commercial unit, or request a custom solution.",
+      "Choose a ready package for your apartment, home or villa, or request a custom solution.",
 
     basic_label: "Starter",
-    basic_tag: "for small offices",
+    basic_tag: "for small properties",
     basic_title: "Basic",
     basic_desc:
-      "Essential support and maintenance for small spaces and coworkings.",
+      "Essential support and maintenance for apartments, homes and small villas.",
     basic_point_1:
       "Scheduled walkthroughs 1–2 times per month",
     basic_point_2: "Response during business hours",
     basic_point_3:
       "Basic reporting for completed work",
     basic_point_4:
-      "Basic monitoring of engineering systems (electrical, HVAC, water)",
+      "Basic monitoring of engineering systems in apartment/home (electrical, HVAC, water)",
+
+    basic_price: "from 90 USD",
 
     standard_label: "Balanced",
-    standard_tag: "for office centers",
+    standard_tag: "for peace and security",
     standard_title: "Standard",
     standard_desc:
-      "Full support of technical systems and ticket prioritization.",
+      "Full support of technical systems in apartments and homes, quick response and ticket prioritization.",
     standard_point_1:
       "Regular walkthroughs with a custom schedule",
     standard_point_2:
@@ -427,21 +448,27 @@ const translationData = {
     standard_point_3:
       "Extended reporting and modernization advice",
     standard_point_4:
+      "Planning and control of seasonal works (air conditioning, heating, etc.) for apartments and homes",
+    standard_point_5:
       "Planning and control of seasonal works (air conditioning, heating, etc.)",
+
+    standard_price: "from 120 USD",
 
     premium_label: "Maximum",
     premium_tag: "for critical sites",
     premium_title: "Premium",
     premium_desc:
-      "Priority support, dedicated manager and fastest response time.",
+      "Priority support for apartments and homes, dedicated manager and fastest response time.",
     premium_point_1: "Dedicated team of engineers",
     premium_point_2: "Minimal 24/7 response time",
     premium_point_3:
-      "Custom regulations per site",
+      "Custom regulations per apartment/home",
     premium_point_4:
-      "Personal manager and regular strategic sessions on the site",
+      "Personal manager and regular strategic sessions on the property",
+    premium_point_5: "Priority service for all systems",
+    premium_point_6: "Concierge service and visit accompaniment",
 
-    price_request: "Price on request",
+    premium_price: "from 180 USD",
 
     contact_label: "Contact us",
     contact_title:
@@ -452,17 +479,17 @@ const translationData = {
     contact_point_2:
       "Support available in Russian, Spanish and English",
     contact_point_3:
-      "Single call‑outs and long‑term contracts",
+      "Single call‑outs and long‑term contracts for apartments and homes",
     contact_email: "Send email",
     contact_whatsapp: "Message on WhatsApp",
     contact_telegram: "Message on Telegram",
     contact_form_title: "Quick request",
     contact_form_name_label: "Name & company",
     contact_form_email_label: "Email or phone",
-    contact_form_object_label: "Type of site",
-    contact_form_object_option_1: "Office / business center",
-    contact_form_object_option_2: "Shop / retail space",
-    contact_form_object_option_3: "Warehouse",
+    contact_form_object_label: "Type of property",
+    contact_form_object_option_1: "Apartment / home",
+    contact_form_object_option_2: "Home / villa",
+    contact_form_object_option_3: "Multiple properties",
     contact_form_object_option_4: "Other",
     contact_form_name_placeholder: "Your name / company",
     contact_form_email_placeholder: "+598 ... / email",
@@ -480,7 +507,7 @@ const translationData = {
 
     footer_rights: "All rights reserved.",
     footer_note:
-      "Management and technical maintenance of residential and commercial properties. Support available in Russian, Spanish and English.",
+      "Management and technical maintenance of residential properties. Support available in Russian, Spanish and English.",
 
     back_home: "Back to home",
     package_label_basic: "Basic Package",
@@ -490,30 +517,30 @@ const translationData = {
     suitable_for: "Suitable for",
     cta_contact: "Contact us",
     basic_suitable_1:
-      "— Small offices and workspaces",
+      "— Apartments and homes",
     basic_suitable_2:
-      "— Coworking spaces and studios",
-    basic_suitable_3: "— Neighborhood shops",
+      "— Small homes and villas",
+    basic_suitable_3: "— Rental properties for investors",
     basic_price_note:
-      "Final price depends on area, technical systems and number of sites.",
+      "Final price depends on area of apartment/home, technical systems and number of properties.",
     standard_suitable_1:
-      "— Mid‑sized office centers",
+      "— Apartments and homes",
     standard_suitable_2:
-      "— Multiple sites of one company",
+      "— Homes and villas",
     standard_suitable_3:
-      "— Retail spaces and showrooms",
-    standard_suitable_4: "— —",
+      "— Multiple properties for investors",
+    standard_suitable_4: "— Commercial spaces (offices, shops)",
     standard_price_note:
-      "Calculated based on area, number of systems, work schedule and required SLA level.",
+      "Calculated based on area of apartment/home, number of systems, work schedule and required SLA level.",
     premium_suitable_1:
-      "— Sites with critical infrastructure",
+      "— Apartments and homes",
     premium_suitable_2:
-      "— Large business centers and shopping complexes",
+      "— Homes and villas",
     premium_suitable_3:
-      "— Medical and technology sites",
-    premium_suitable_4: "— —",
+      "— Multiple properties for investors",
+    premium_suitable_4: "— Commercial spaces (offices, shops)",
     premium_price_note:
-      "Selected individually based on SLA, system criticality and number of sites.",
+      "Selected individually based on SLA, system criticality and number of apartments/homes.",
   },
 };
 
